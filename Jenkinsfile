@@ -6,7 +6,7 @@ stages
 stage('clone')
 {
 steps{
-git'https://github.com/Vishalsetti/vishal.git'
+git 'https://github.com/Vishalsetti/vishal.git'
 }
 }
 stage('build')
@@ -20,6 +20,7 @@ stage('run')
 steps
 {
 sh 'java hello'
+}
 }
 }
 }
